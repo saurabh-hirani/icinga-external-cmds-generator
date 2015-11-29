@@ -37,9 +37,9 @@ $ python external_cmd_script_generator.py \
 
 The above command does the following:
 
-  - Searches for "disable_hostgorup_host_checks.tmpl in templates/
-  - Needs to patch it - calls tmpl_vars_generators.find_hostgroup_by_pattern by passing in --func-args
-  - Dumps the patched output in output/disable_hostgroup_host_checks-stage.sh
+    1. Searches for "disable_hostgorup_host_checks.tmpl in templates/
+    2. Needs to patch it - calls tmpl_vars_generators.find_hostgroup_by_pattern by passing in --func-args
+    3. Dumps the patched output in output/disable_hostgroup_host_checks-stage.sh
 
 You can add a new template, write the appropriate function in **tmpl_vars_generators.py**
 and get the desired output script.
