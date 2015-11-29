@@ -15,7 +15,7 @@ TODO: Link to a new blog post on http://saurabh-hirani.github.io/
 
 ### Examples
 
-* Cache the icinga data locally
+1. Cache the icinga data locally
 
 ```
 $ ./get_icinga_data.sh $NAGIRA_HOST $NAGIRA_PORT
@@ -26,7 +26,7 @@ The above command does the following:
 1. Generates hosts, services and hostgroups data from nagira and dumps their 
    json in the **cache/** dir.
 
-* Generate a shell-script which will disable service checks on all hosts belonging
+2. Generate a shell-script which will disable service checks on all hosts belonging
 to a hostgroup which matches **stage** but not **stage-local**
 
 ```
