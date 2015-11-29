@@ -22,6 +22,7 @@ $ ./get_icinga_data.sh $NAGIRA_HOST $NAGIRA_PORT
 ```
 
 The above command does the following:
+
 1. Generates hosts, services and hostgroups data from nagira and dumps their 
    json in the **cache/** dir.
 
