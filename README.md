@@ -23,7 +23,7 @@ $ ./get_icinga_data.sh $NAGIRA_HOST $NAGIRA_PORT
 
 The above command does the following:
 
-  1.1. Generates hosts, services and hostgroups data from nagira and dumps their json in the **cache/** dir.
+  - Generates hosts, services and hostgroups data from nagira and dumps their json in the **cache/** dir.
 
 2. Generate a shell-script which will disable service checks on all hosts belonging
 to a hostgroup which matches **stage** but not **stage-local**
@@ -38,9 +38,9 @@ $ python external_cmd_script_generator.py \
 
 The above command does the following:
 
-  2.1. Searches for "disable_hostgorup_host_checks.tmpl in templates/
-  2.2. Needs to patch it - calls tmpl_vars_generators.find_hostgroup_by_pattern by passing in --func-args
-  2.3. Dumps the patched output in output/disable_hostgroup_host_checks-stage.sh
+  - Searches for "disable_hostgorup_host_checks.tmpl in templates/
+  - Needs to patch it - calls tmpl_vars_generators.find_hostgroup_by_pattern by passing in --func-args
+  - Dumps the patched output in output/disable_hostgroup_host_checks-stage.sh
 
-* You can add a new template, write the appropriate function in **tmpl_vars_generators.py**
+You can add a new template, write the appropriate function in **tmpl_vars_generators.py**
 and get the desired output script.
