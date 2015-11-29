@@ -21,7 +21,6 @@ $ ./get_icinga_data.sh $NAGIRA_HOST $NAGIRA_PORT
 ```
 The above command does the following:
   - Generates hosts, services and hostgroups data from nagira and dumps their json in the **cache/** dir.
-
 2. Generate a shell-script which will disable service checks on all hosts belonging
 to a hostgroup which matches **stage** but not **stage-local**
 ```
